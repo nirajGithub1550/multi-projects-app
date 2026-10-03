@@ -1,8 +1,10 @@
 // src/App.jsx
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Sidebar from './Sidebar';
-import Autocomplete from './Autocomplete';
+import Autocomplete from './autocomplete2';
 import TodoApp from './TodoApp';
+import ProductsTable from './ProductsTable';
+import NestedComments from './NestedComments';
 import './App.css';
 
 export default function App() {
@@ -20,6 +22,8 @@ export default function App() {
             
             <Route path="/search" element={<Autocomplete />} />
             <Route path="/todos" element={<TodoApp />} />
+            <Route path="/products" element={<ProductsTable />} />
+            <Route path="/comments" element={<NestedComments />} />
           </Routes>
         </main>
       </div>
